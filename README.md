@@ -1,4 +1,4 @@
-#aliDDNS
+# aliDDNS
 使用阿里云DDNS
 ##
 使用方法:\
