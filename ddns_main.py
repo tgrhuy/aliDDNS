@@ -19,18 +19,6 @@ def upmydns(info):
     request.set_RecordId(set_RecordId)
     response = client.do_action_with_exception(request)
     print(str(response, encoding='utf-8'))
-# def setbatch(IP):
-#     for i in INFO:
-#         i["set_Value"] = IP
-#         upmydns(i)
-#         print(i)
-
-# if __name__ == '__main__':
-#     IP = sys.argv[1]
-#     # IP = "8.8.8.8"
-#     setbatch(IP)
-
-
 
 
 
