@@ -12,18 +12,8 @@ from DDNS_settings import ALIACS,IPURL,DOMAINNAME
 
 client = AcsClient(ALIACS["accessKeyId"], ALIACS["accessSecret"], ALIACS["zone"])
 
-
-###########getdomainList############
 getdomainLIST = DescribeDomainRecordsRequest()
 getdomainLIST.set_accept_format('json')
-
-# getdomainLIST.set_DomainName("itot.xyz")
-# response = str(client.do_action_with_exception(getdomainLIST),encoding='utf-8')
-# response = json.loads(response)
-###################################
-# INFO = response['DomainRecords']['Record']
-
-
 
 
 def ddns_run():
