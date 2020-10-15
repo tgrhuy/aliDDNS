@@ -20,7 +20,7 @@ def ddns_run():
     ###gerIP###
     r = requests.get(IPURL)
     txt = r.text
-    ipaddr = txt[txt.find("[") + 1: txt.find("]")]
+    ipaddr = txt
     print(ipaddr)
     ######
     for dm in DOMAINNAME:
